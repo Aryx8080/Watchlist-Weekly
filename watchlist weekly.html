@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Watchlist Weekly</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f7f7;
+      color: #111;
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    header h1 {
+      font-size: 2rem;
+    }
+    .slider {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      gap: 20px;
+    }
+    .stock {
+      flex: 0 0 90%;
+      scroll-snap-align: start;
+      background: white;
+      padding: 16px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .stock strong {
+      font-size: 1.1rem;
+      display: block;
+      margin-bottom: 5px;
+    }
+    .meta {
+      font-style: italic;
+      color: #555;
+      margin-bottom: 10px;
+    }
+    .label {
+      font-weight: bold;
+    }
+    .archive-link {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .archive-link a {
+      color: #0066cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #888;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📈 Watchlist Weekly</h1>
+  </header>
+
+  <section class="slider">
+    <div class="stock">
+      <strong>1. $TSLA – Tesla</strong>
+      <div class="meta">The king of EV. Everyone has an opinion, and that’s the edge.</div>
+      <p><span class="label">Why I’m watching:</span> Key chart levels in play. AI + robotaxis keep narrative strong despite delivery concerns.</p>
+      <p><span class="label">Sentiment:</span> 🔁 Constant — retail, funds, and Twitter all watching</p>
+      <p><span class="label">My take:</span> If it breaks resistance with volume, I’m in. Holding above support = confidence.</p>
+    </div>
+
+    <div class="stock">
+      <strong>2. $PLTR – Palantir</strong>
+      <div class="meta">The black box of government AI — mysterious but powerful.</div>
+      <p><span class="label">Why I’m watching:</span> AI contracts keep piling in. Palantir’s unique public + private position is rare.</p>
+      <p><span class="label">Sentiment:</span> 🧠 Divisive — retail bullish, institutions still unsure</p>
+      <p><span class="label">My take:</span> Consolidating well. If it holds above 20, it could be prepping for a strong move into summer.</p>
+    </div>
+
+    <!-- Add more stock slides here -->
+  </section>
+
+  <div class="archive-link">
+    <p><a href="archive.html">🗂 View Archives</a></p>
+  </div>
+
+  <footer>
+    © 2025 Watchlist Weekly – Opinions, not investment advice.
+  </footer>
+</body>
+</html>
