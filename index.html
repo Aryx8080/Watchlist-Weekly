@@ -11,56 +11,50 @@
       box-sizing: border-box;
     }
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Helvetica Neue', sans-serif;
       background-color: #f7f7f7;
       color: #111;
-      max-width: 600px;
+      max-width: 500px;
       margin: auto;
-      padding: 20px;
+      padding: 20px 16px;
     }
     header {
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
     header h1 {
-      font-size: 2rem;
-    }
-    .slider {
-      display: flex;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
-      gap: 20px;
+      font-size: 2.2rem;
+      font-weight: 600;
     }
     .stock {
-      flex: 0 0 90%;
-      scroll-snap-align: start;
       background: white;
-      padding: 16px;
+      padding: 20px;
       border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+      margin-bottom: 24px;
     }
     .stock strong {
-      font-size: 1.1rem;
+      font-size: 1.15rem;
       display: block;
-      margin-bottom: 5px;
+      margin-bottom: 6px;
     }
     .meta {
       font-style: italic;
-      color: #555;
+      color: #666;
       margin-bottom: 10px;
     }
     .label {
-      font-weight: bold;
+      font-weight: 600;
     }
     .archive-link {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 40px;
     }
     .archive-link a {
       color: #0066cc;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1rem;
     }
     footer {
       text-align: center;
@@ -75,25 +69,45 @@
     <h1>📈 Watchlist Weekly</h1>
   </header>
 
-  <section class="slider">
-    <div class="stock">
-      <strong>1. $TSLA – Tesla</strong>
-      <div class="meta">The king of EV. Everyone has an opinion, and that’s the edge.</div>
-      <p><span class="label">Why I’m watching:</span> Key chart levels in play. AI + robotaxis keep narrative strong despite delivery concerns.</p>
-      <p><span class="label">Sentiment:</span> 🔁 Constant — retail, funds, and Twitter all watching</p>
-      <p><span class="label">My take:</span> If it breaks resistance with volume, I’m in. Holding above support = confidence.</p>
-    </div>
+  <div class="stock">
+    <strong>1. $TSLA – Tesla</strong>
+    <div class="meta">The king of EV. Everyone has an opinion, and that’s the edge.</div>
+    <p><span class="label">Why I’m watching:</span> Key chart levels in play. AI + robotaxis keep narrative strong despite delivery concerns.</p>
+    <p><span class="label">Sentiment:</span> 🔁 Constant — retail, funds, and Twitter all watching</p>
+    <p><span class="label">My take:</span> If it breaks resistance with volume, I’m in. Holding above support = confidence.</p>
+  </div>
 
-    <div class="stock">
-      <strong>2. $PLTR – Palantir</strong>
-      <div class="meta">The black box of government AI — mysterious but powerful.</div>
-      <p><span class="label">Why I’m watching:</span> AI contracts keep piling in. Palantir’s unique public + private position is rare.</p>
-      <p><span class="label">Sentiment:</span> 🧠 Divisive — retail bullish, institutions still unsure</p>
-      <p><span class="label">My take:</span> Consolidating well. If it holds above 20, it could be prepping for a strong move into summer.</p>
-    </div>
+  <div class="stock">
+    <strong>2. $PLTR – Palantir</strong>
+    <div class="meta">The black box of government AI — mysterious but powerful.</div>
+    <p><span class="label">Why I’m watching:</span> AI contracts keep piling in. Palantir’s unique public + private position is rare.</p>
+    <p><span class="label">Sentiment:</span> 🧠 Divisive — retail bullish, institutions still unsure</p>
+    <p><span class="label">My take:</span> Consolidating well. If it holds above 20, it could be prepping for a strong move into summer.</p>
+  </div>
 
-    <!-- Add more stock slides here -->
-  </section>
+  <div class="stock">
+    <strong>3. $SOFI – SoFi Technologies</strong>
+    <div class="meta">Not a bank? Not a fintech? A bit of both, and that’s the play.</div>
+    <p><span class="label">Why I’m watching:</span> SoFi’s user growth is impressive and its digital-first model appeals to Gen Z and millennials. Lending + investing = sticky revenue.</p>
+    <p><span class="label">Sentiment:</span> 💡 Under-the-radar — popular with retail but still under-owned institutionally</p>
+    <p><span class="label">My take:</span> Price action is coiling. If macro sentiment lifts, SoFi could lead small caps up.</p>
+  </div>
+
+  <div class="stock">
+    <strong>4. LSEG.L – London Stock Exchange Group</strong>
+    <div class="meta">The backbone of UK finance.</div>
+    <p><span class="label">Why I’m watching:</span> LSEG’s strategic pivot to data analytics and its acquisition of Refinitiv sets it apart. Earnings in focus.</p>
+    <p><span class="label">Sentiment:</span> 🏦 Institutional comfort — conservative growth, stable returns</p>
+    <p><span class="label">My take:</span> Good long-term hold, might add if it dips near support zone on volume.</p>
+  </div>
+
+  <div class="stock">
+    <strong>5. HL.L – Hargreaves Lansdown</strong>
+    <div class="meta">UK’s biggest investment platform.</div>
+    <p><span class="label">Why I’m watching:</span> A bellwether for UK retail sentiment. Any rebound in market participation should show here first.</p>
+    <p><span class="label">Sentiment:</span> 📉 Mixed — concern over retail flows, but solid fundamentals</p>
+    <p><span class="label">My take:</span> Watching earnings reaction closely. Breakout above recent high could lead to trend reversal.</p>
+  </div>
 
   <div class="archive-link">
     <p><a href="archive.html">🗂 View Archives</a></p>
