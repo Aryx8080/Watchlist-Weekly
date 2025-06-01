@@ -1,59 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Watchlist Archives</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Watchlist Weekly</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      max-width: 600px;
-      margin: auto;
-      padding: 20px;
-      background: #f7f7f7;
-      color: #111;
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    h1 {
+    body {
+      font-family: 'Playfair Display', serif;
+      background-color: #111;
+      color: #f1f1f1;
+      max-width: 500px;
+      margin: auto;
+      padding: 20px 16px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: 600;
+    }
+    header p {
+      font-size: 0.95rem;
+      color: #ccc;
+      margin-top: 10px;
+    }
+    .section-separator {
       text-align: center;
       margin-bottom: 30px;
     }
-    .entry {
-      background: #fff;
-      padding: 16px;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      margin-bottom: 20px;
-    }
-    .entry h2 {
-      font-size: 1rem;
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #f1f1f1;
       margin-bottom: 8px;
     }
-    .entry a {
-      text-decoration: none;
-      color: #0066cc;
+    .line {
+      width: 40px;
+      height: 2px;
+      background-color: #ff6f61;
+      margin: 0 auto;
+      border-radius: 1px;
     }
-    .back-link {
+    .stock {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 1px 4px rgba(255,255,255,0.05);
+      margin-bottom: 24px;
+    }
+    .stock strong {
+      font-size: 1.15rem;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .meta {
+      font-style: italic;
+      color: #aaa;
+      margin-bottom: 10px;
+    }
+    .label {
+      font-weight: 600;
+      color: #ddd;
+    }
+    .archive-link {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 40px;
     }
-    .back-link a {
-      color: #0066cc;
+    .archive-link a {
+      color: #f1f1f1;
+      text-decoration: underline;
       font-weight: bold;
+      font-size: 1rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #666;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <h1>🗂 Watchlist Archives</h1>
+  <header>
+    <h1>Watchlist Weekly</h1>
+    <p>by Aryan Chandra — a curated weekly stock watchlist built on trends, momentum, and sentiment. Updated every Sunday.</p>
+  </header>
 
-  <div class="entry">
-    <h2><a href="archive-2025-05-27.html">May 27, 2025</a></h2>
-    <p>High conviction week led by Tesla, Palantir and SoFi.</p>
+  <div class="section-separator">
+    <p class="section-title">May 22, 2025</p>
+    <div class="line"></div>
   </div>
 
-  <!-- Add new entries like above for each week -->
-
-  <div class="back-link">
-    <a href="index.html">← Back to Latest Watchlist</a>
+  <div class="stock">
+    <strong>1. $RR.L – Rolls-Royce Holdings</strong>
+    <div class="meta">Engineering powerhouse making a post-COVID comeback — and now riding the defense + energy wave.</div>
+    <p><span class="label">Why I’m watching:</span> Massive retail interest, strong momentum, and sharp cost-cutting have transformed this from a turnaround to a growth story.</p>
+    <p><span class="label">Sentiment:</span> 🚀 Bullish — high volume, strong media attention, breakout charts</p>
+    <p><span class="label">My take:</span> As long as it stays above recent support and defense budgets remain strong, this keeps running.</p>
   </div>
+
+  <div class="stock">
+    <strong>2. $LLOY.L – Lloyds Banking Group</strong>
+    <div class="meta">High-street banking giant with steady hands and a solid dividend. Quietly building tech too.</div>
+    <p><span class="label">Why I’m watching:</span> Undervalued compared to global peers. Sensitive to UK macro but stable long-term. Stronger than it looks.</p>
+    <p><span class="label">Sentiment:</span> Conservative favourite — less hype, but solid institutional backing</p>
+    <p><span class="label">My take:</span> Not a rocketship, but a steady climb. I’d buy pullbacks and hold if BoE pivots on rates.</p>
+  </div>
+
+  <div class="stock">
+    <strong>3. $OCDO.L – Ocado Group</strong>
+    <div class="meta">UK tech meets groceries — high risk, high disruption. Big bets on automation.</div>
+    <p><span class="label">Why I’m watching:</span> Despite volatility, Ocado’s warehouse tech has global reach. If sentiment shifts, this could recover fast.</p>
+    <p><span class="label">Sentiment:</span> ⚠️ Divisive — either a moonshot or a money pit, depending who you ask</p>
+    <p><span class="label">My take:</span> Pure momentum play. I’m only in if it breaks trend lines with volume. Otherwise, it’s a watchlist curiosity.</p>
+  </div>
+
+  <div class="stock">
+    <strong>4. $GLEN.L – Glencore PLC</strong>
+    <div class="meta">Global mining and trading giant with exposure to metals, energy, and volatility.</div>
+    <p><span class="label">Why I’m watching:</span> Plays the commodities cycle smartly. Cash flow is strong, and any bounce in copper or coal could drive price action.</p>
+    <p><span class="label">Sentiment:</span> 🧊 Underrated — institutional favourite, but not on retail radar</p>
+    <p><span class="label">My take:</span> I’m watching for macro-driven moves. Solid hedge during inflation or energy shocks.</p>
+  </div>
+
+  <div class="stock">
+    <strong>5. $SXS.L – Spectris PLC</strong>
+    <div class="meta">High-precision tech used in manufacturing, life sciences, and clean energy. Quiet compounder.</div>
+    <p><span class="label">Why I’m watching:</span> Spectris makes the kind of measurement and analytics gear that powers modern industry — from semiconductors to pharma. It’s not flashy, but it’s profitable, well-managed, and could benefit from AI-driven automation trends.</p>
+    <p><span class="label">Sentiment:</span> 🧠 Institutional pick — under the radar for retail, but rock solid</p>
+    <p><span class="label">My take:</span> If the UK has a tech-industrial growth story, this stock will be part of it. Breakouts above historical highs = entry signal.</p>
+  </div>
+
+  <footer>
+    © 2025 Watchlist Weekly – Opinions, not investment advice.
+  </footer>
 </body>
 </html>
