@@ -25,31 +25,26 @@
       margin-bottom: 40px;
     }
     header h1 {
-      font-size: 2.2rem;
-      font-weight: 600;
-    }
-    header p {
-      font-size: 0.95rem;
-      color: #ccc;
-      margin-top: 10px;
-    }
-    .section-separator {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .section-title {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.2rem;
+      font-size: 2.5rem;
       font-weight: 600;
       color: #f1f1f1;
-      margin-bottom: 8px;
+    }
+    header .author {
+      font-size: 1rem;
+      color: #6fe2cf;
+      margin-top: 8px;
     }
     .line {
       width: 40px;
       height: 2px;
       background-color: #ff6f61;
-      margin: 0 auto;
+      margin: 12px auto;
       border-radius: 1px;
+    }
+    header p {
+      font-size: 0.95rem;
+      color: #ccc;
+      margin-top: 10px;
     }
     .stock {
       background: #1a1a1a;
@@ -93,13 +88,10 @@
 <body>
   <header>
     <h1>Watchlist Weekly</h1>
-    <p>by Aryan Chandra — a curated weekly stock watchlist built on trends, momentum, and sentiment. Updated every Sunday.</p>
-  </header>
-
-  <div class="section-separator">
-    <p class="section-title">Latest Watchlist</p>
+    <div class="author">by Aryan Chandra</div>
     <div class="line"></div>
-  </div>
+    <p>A curated weekly stock watchlist built on trends, momentum, and sentiment. Updated every Sunday.</p>
+  </header>
 
   <div class="stock">
     <strong>1. $TSLA – Tesla</strong>
