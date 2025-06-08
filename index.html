@@ -12,81 +12,83 @@
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
       font-family: 'Playfair Display', serif;
       background-color: #111;
       color: #f1f1f1;
-      max-width: 500px;
-      margin: auto;
-      padding: 20px 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
     }
-    header {
+
+    .container {
+      background-color: #1a1a1a;
+      border-radius: 20px;
+      padding: 40px 24px;
       text-align: center;
+      max-width: 700px;
+      width: 100%;
+      box-shadow: 0 0 10px rgba(255,255,255,0.05);
       margin-bottom: 40px;
     }
-    header h1 {
-      font-size: 2.2rem;
+
+    h1 {
+      font-size: 2.6rem;
       font-weight: 600;
-    }
-    .author {
-      font-size: 0.95rem;
-      color: #ccc;
-      margin-top: 8px;
-    }
-    .subtitle {
-      font-size: 0.95rem;
-      color: #ccc;
-      margin-top: 4px;
-    }
-    .section-separator {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .section-title {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.2rem;
-      font-weight: 600;
+      margin-bottom: 12px;
       color: #f1f1f1;
-      margin-bottom: 8px;
     }
+
+    .author {
+      font-size: 1rem;
+      color: #50b8a0;
+      margin-bottom: 16px;
+    }
+
     .line {
-      width: 40px;
+      width: 50px;
       height: 2px;
       background-color: #ff6f61;
-      margin: 0 auto;
+      margin: 0 auto 24px auto;
       border-radius: 1px;
     }
-    .stock {
-      background: #1a1a1a;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 1px 4px rgba(255,255,255,0.05);
-      margin-bottom: 24px;
+
+    .intro {
+      font-size: 1rem;
+      color: #ccc;
+      line-height: 1.6;
+      margin-bottom: 40px;
     }
+
+    .stock {
+      background: #222;
+      padding: 24px;
+      margin-bottom: 24px;
+      border-radius: 12px;
+      box-shadow: 0 1px 5px rgba(255,255,255,0.04);
+      text-align: left;
+    }
+
     .stock strong {
-      font-size: 1.15rem;
+      font-size: 1.2rem;
       display: block;
       margin-bottom: 6px;
+      color: #f1f1f1;
     }
+
     .meta {
       font-style: italic;
       color: #aaa;
       margin-bottom: 10px;
     }
+
     .label {
       font-weight: 600;
       color: #ddd;
     }
-    .archive-link {
-      text-align: center;
-      margin-top: 40px;
-    }
-    .archive-link a {
-      color: #f1f1f1;
-      text-decoration: underline;
-      font-weight: bold;
-      font-size: 1rem;
-    }
+
     footer {
       text-align: center;
       font-size: 0.8rem;
@@ -96,18 +98,56 @@
   </style>
 </head>
 <body>
-  <header>
+
+  <div class="container">
     <h1>Watchlist Weekly</h1>
     <p class="author">by Aryan Chandra</p>
-    <p class="subtitle">A curated weekly stock watchlist built on trends, momentum, and sentiment. Updated every Sunday.</p>
-  </header>
-
-  <div class="section-separator">
-    <p class="section-title">May 30, 2025</p>
     <div class="line"></div>
-  </div>
+    <p class="intro">
+      A curated weekly stock watchlist built on trends, momentum, and sentiment. Updated every Sunday.
+    </p>
 
-  <!-- Existing stock content continues here... -->
+    <!-- June 8, 2025 Watchlist -->
+    <div class="stock">
+      <strong>$AVST.L – Avast PLC</strong>
+      <p class="meta">Cybersecurity staple growing quietly with enterprise momentum.</p>
+      <p><span class="label">Why I’m watching:</span> Increasing enterprise adoption, steady cash flow, and optionality with M&A interest from US players. Solid margins and a defensive profile in volatile markets.</p>
+      <p><span class="label">Sentiment:</span> 🧠 Smart money favourite — not noisy, but quietly accumulated.</p>
+      <p><span class="label">My take:</span> I’d accumulate on dips — high conviction for any tech-led recovery.</p>
+    </div>
+
+    <div class="stock">
+      <strong>$BARC.L – Barclays PLC</strong>
+      <p class="meta">Large-cap UK bank with international exposure and undervalued multiples.</p>
+      <p><span class="label">Why I’m watching:</span> Potential rate cut tailwinds from BoE, low P/E vs global peers, plus dividend yield keeps it attractive to income-focused investors.</p>
+      <p><span class="label">Sentiment:</span> ⚖️ Value-oriented — still unloved but not ignored.</p>
+      <p><span class="label">My take:</span> I’m in if macro stabilizes. Rotation into financials may finally stick this time.</p>
+    </div>
+
+    <div class="stock">
+      <strong>$PRTC.L – PureTech Health</strong>
+      <p class="meta">Early-stage biotech firm playing in high-risk, high-reward territory.</p>
+      <p><span class="label">Why I’m watching:</span> Strong IP pipeline, recent positive trial data, and potential partnerships. Could attract speculative capital as risk appetite increases.</p>
+      <p><span class="label">Sentiment:</span> ⚗️ Speculative — not for the faint of heart.</p>
+      <p><span class="label">My take:</span> I’ll nibble if we see insider buying or volume spikes. Binary outcome potential.</p>
+    </div>
+
+    <div class="stock">
+      <strong>$EXPN.L – Experian PLC</strong>
+      <p class="meta">Consumer credit data behemoth quietly transforming with AI-driven analytics.</p>
+      <p><span class="label">Why I’m watching:</span> Credit cycle tailwinds and digitization of financial services put Experian at the heart of decision-making infrastructure. Sticky recurring revenues and global footprint.</p>
+      <p><span class="label">Sentiment:</span> 🧠 Institutional darling — boring on the surface, powerful underneath.</p>
+      <p><span class="label">My take:</span> I’ll add on technical breakouts. Long-term compounder vibes.</p>
+    </div>
+
+    <div class="stock">
+      <strong>$ITV.L – ITV PLC</strong>
+      <p class="meta">Legacy media house transitioning into digital entertainment and streaming.</p>
+      <p><span class="label">Why I’m watching:</span> Despite ad pressure, ITVX digital rollout gaining traction. Any M&A buzz could be a major catalyst. Trading well below historic multiples.</p>
+      <p><span class="label">Sentiment:</span> 🎭 Contrarian — ignored for years, but media is cyclical.</p>
+      <p><span class="label">My take:</span> This is a narrative play. I’m watching volume and social chatter for signs of life.</p>
+    </div>
+  </div>
 
   <footer>
     © 2025 Watchlist Weekly – Opinions, not investment advice.
